@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, request
 
 app = Flask(__name__)
 app.config['DEBUG'] = True
@@ -38,6 +38,6 @@ form = """
 def index():
     return form
 
-@app.route("/",[])
+@app.route("/", methods=['POST'])
 
 app.run()
