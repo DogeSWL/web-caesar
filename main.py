@@ -38,4 +38,6 @@ form = """
 def index():
     return form
 
+@app.route("/",[])
+
 app.run()
